@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Relatos - Redex</title>
+</head>
+<body>
+    <div class="contenedorMenu" id="uno">
+        <a href="principal.html"><img src="icon1.png" alt="Icon1" class="icon"></a>
+    </div>
+    <a href="index.html" class="cerrar">Cerrar cesion</a>
+    <h1>Relatos</h1>
+    <br>
+
+    <div class="container">
+        <h1>Comparte tu Historia </h1>
+        <form id="story-form">
+            <div class="form-group">
+                <label class="nombre" for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <textarea id="historia" name="historia" rows="10" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="confirmation-message"></div>
+    </div>
+    
+</body>
+</html>

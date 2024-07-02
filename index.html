@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<link>
+    <meta charset="UTF-8">
+    <script src="miScript.js"></script>
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Redex-Iniciar sesión</title>
+</head>
+<body>
+    <form action="principal.html"  onsubmit="return validar();">
+        <h1>Iniciar sesión</h1>
+        <div class="correo">
+            <label class="user-Gmail" for="user-Gmail">Correo:</label>
+            <input class="correo" type="email" id="correo" name="userGmail" placeholder="..." required />
+        </div>
+        <div class="Contraseña">
+            <label for="txtBox01" class="contraseña">Contraseña:</label>
+            <input type="password" id="password" name="txtBox01" placeholder="..." required>
+        </div>
+        <br>
+        <div>
+            <input class="iniciar" type="submit" value="Iniciar">
+        </div>
+    </form>
+</body>
+</html>

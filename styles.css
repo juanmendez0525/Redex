@@ -1,0 +1,245 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #090b0e;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor principal */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el enlace de cerrar sesión */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 35px;
+    height: 40px;
+    width: 110px;
+    text-align: center;
+}
+
+.cerrar:hover {
+    background: #494949;
+}
+
+/* Estilos para el texto animado */
+.texto-animado {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.texto-animado .contenedor {
+    height: 40px;
+    display: flex;
+    font-size: 35px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.texto-animado ul, .texto-animado p {
+    margin: 0;
+    padding-left: 0;
+}
+
+.texto-animado p {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+.texto-animado ul {
+    list-style: none;
+    animation: movimiento 10s infinite;
+}
+
+.texto-animado ul .inicio {
+    background-image: linear-gradient(90deg, #ed0de2, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 5px;
+    letter-spacing: 1px;
+}
+
+@keyframes movimiento {
+    0%, 20% { margin-top: 0; }
+    25%, 50% { margin-top: -40px; }
+    55%, 80% { margin-top: -80px; }
+    85%, 95% { margin-top: -40px; }
+    100% { margin-top: 0; }
+}
+
+/* Estilos para los encabezados */
+h1 {
+    margin-top: 1rem;
+    background-image: linear-gradient(90deg, #ed0de2, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 5px;
+}
+
+p {
+    text-align: justify;
+    max-width: 600px;
+    padding: 0 1rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.contraseña {
+    color: #ed0de2;
+}
+
+.user-Gmail {
+    color: #d5d811;
+}
+
+.correo {
+    position: relative;
+    left: 8.5px;
+}
+
+.iniciar {
+    height: 40px;
+    width: 70px;
+    background-color: #ed0de2;
+    color: #d5d811;
+    font-size: 15px;
+}
+
+/* Estilos para el contenedor del menú */
+#uno {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #535557;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #090b0e;
+    box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.contenedorMenu:hover .icon {
+    box-shadow: 0px 0px 0px 0px #494949;
+    transform: scale(0.9);
+}
+
+/* Estilos para la sección de páginas */
+.paginas {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paginas li {
+    list-style: none;
+    background-image: linear-gradient(90deg, #ed0de2, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin: 0 1rem;
+}
+
+.cueRela, .menu {
+    margin: 0;
+    padding: 0;
+    border: solid #2f4355;
+}
+
+/* Estilos para los cuentos clásicos */
+.Clasicos h1 {
+    background-image: linear-gradient(90deg, #ed0de2, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Clasicos h3 {
+    position: relative;
+    margin: 20px;
+    color: white;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.imgCuentos {
+    position: relative;
+    float: left;
+    margin: 20px;
+}
+
+.caperucita, .sirenita {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 630px;
+    background-color: #242424;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    resize: none;
+}
+
+.nombre {
+    color: #d5d811;
+}
+
+.subir {
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 35px;
+    height: 40px;
+    width: 110px;
+    text-align: center;
+}
+
+/* Media Queries para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .texto-animado .contenedor {
+        font-size: 25px;
+    }
+
+    .texto-animado p {
+        font-size: 25px;
+    }
+
+    .paginas li {
+        font-size: 20px;
+    }
+
+    .imgCuentos {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
